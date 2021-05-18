@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="profile.css"> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+<style>
+
+
+  body {
+    font-family: Arial;
+    font-size: 17px;
+    padding: 8px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  a {
+    color: #2196F3;
+  }
+  
+  hr {
+    border: 1px solid lightgrey;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
+  
+  
+  .search-container{
+    margin-bottom:8px;
+   }
+   
+   
+   .search-container button {
+     float: right;
+     padding: 6px 10px;
+     margin-top: 8px;
+     margin-right: 0;
+     font-size: 17px;
+     border: none;
+     cursor: pointer;
+      background:#04AA6D;
+     display: block;
+     text-align: left;
+     width: 100%;
+     margin: 0;
+     padding: 14px;
+   }
+   
+   .search-container button:hover {
+    background: #2196F3;
+  }
+  
+  
+  
+   @media screen and (max-width: 600px) {
+    .search-container {
+      float: none;
+    }
+  
+    
+     
+
+
+</style>
+
+
+
+</head>
+<body>
+
+<h2>About Your Self</h2>
+<p>Tell Me About Your Self...</p>
+<div class="row">
+  <div class="col-75">
+    <div class="container " >
+      <form action="index.html">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Personal Information</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+
+            <h3>Contact Information</h3>
+            <div class="row">
+              <div class="col-50">
+                <label for="state">Country Code</label>
+                <input type="text" id="state" name="state" placeholder="Country Code ">
+              </div>
+              <div class="col-50">
+                <label for="mobile"><i class="fa fa-mobile"></i> Mobile Number</label>
+                <input type="text" id="mobile" name="mobile" placeholder="9999999999">
+              </div>
+            </div>
+            <label for="whatsapp"><i class="fa fa-whatsapp"></i> Whatsapp Number</label>
+            <input type="text" id="whatsapp" name="whatsapp" placeholder="9999999999">
+
+            <label for="linkedin"><i class="fa fa-linkedin"></i> Linked in</label>
+            <input type="text" id="linkedin" name="linkedin" placeholder="Your Linked in Profile">
+
+          
+       
+          </div>
+
+          <div class="col-50">
+                
+            
+
+
+            <img src="https://cdn2.vectorstock.com/i/1000x1000/20/76/man-avatar-profile-vector-21372076.jpg" class="rounded" alt="Cinque Terre" width="304" height="236"> 
+
+            <input type="file" name="Upload Your Profile">
+
+        
+
+
+          </div>
+          
+        </div>
+
+
+        <hr/><br/>
+
+        <div class="row">
+          <div class="col-50">
+            <h3>Skills Information</h3>
+
+            <br/>
+
+            <h4>Skill Your Wan't To Learn</h4>
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-success">First item</li>
+              <li class="list-group-item list-group-item-info">Second item</li>
+              <li class="list-group-item list-group-item-warning">Third item</li>
+              <li class="list-group-item list-group-item-danger">Fourth item</li>
+            </ul>
+
+            <br/><br/>
+
+            <h4>Still You Wan't To Teach</h4>
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-success">First item</li>
+              <li class="list-group-item list-group-item-info">Second item</li>
+              <li class="list-group-item list-group-item-warning">Third item</li>
+              <li class="list-group-item list-group-item-danger">Fourth item</li>
+            </ul>
+          
+       
+          </div>
+
+          <div class="col-50">
+                
+            
+
+            <div class="search-container">
+              <form action="">
+                <input class="col-sm-8"  type="text" placeholder="Search skills Name" name="search">
+                <button class="col-sm-2" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+              </form>
+            </div>
+    
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Skills Name</th>
+                  <th>Learn</th>
+                  <th>Teach</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Name Of The Skill</td>
+                  <td>
+                    <div class="checkbox">
+                    <label><input type="checkbox" value=""></label>
+                  </div>
+                </td>
+                <td>
+                  <div class="checkbox">
+                  <label><input type="checkbox" value=""></label>
+                </div>
+              </td>
+                </tr>      
+                <tr class="table-primary">
+                  <td>Name Of The Skill</td>
+                  <td>
+                    <div class="checkbox">
+                    <label><input type="checkbox" value=""></label>
+                  </div>
+                </td>
+                <td>
+                  <div class="checkbox">
+                  <label><input type="checkbox" value=""></label>
+                </div>
+              </td>
+                </tr>  
+                </tr>
+                <tr class="table-success">
+                  <td>Name Of The Skill</td>
+                  <td>
+                    <div class="checkbox">
+                    <label><input type="checkbox" value=""></label>
+                  </div>
+                </td>
+                <td>
+                  <div class="checkbox">
+                  <label><input type="checkbox" value=""></label>
+                </div>
+              </td>
+                </tr>  
+                </tr>
+                <tr class="table-danger">
+                  <td>Name Of The Skill</td>
+                  <td>
+                    <div class="checkbox">
+                    <label><input type="checkbox" value=""></label>
+                  </div>
+                </td>
+                <td>
+                  <div class="checkbox">
+                  <label><input type="checkbox" value=""></label>
+                </div>
+              </td>
+                </tr>  
+                </tr>
+                <tr class="table-info">
+                  <td>Name Of The Skill</td>
+                  <td>
+                    <div class="checkbox">
+                    <label><input type="checkbox" value=""></label>
+                  </div>
+                </td>
+                <td>
+                  <div class="checkbox">
+                  <label><input type="checkbox" value=""></label>
+                </div>
+              </td>
+                </tr>  
+                </tr>
+                <tr class="table-warning">
+                  <td>Name Of The Skill</td>
+                  <td>
+                    <div class="checkbox">
+                    <label><input type="checkbox" value=""></label>
+                  </div>
+                </td>
+                <td>
+                  <div class="checkbox">
+                  <label><input type="checkbox" value=""></label>
+                </div>
+              </td>
+                </tr>  
+                </tr>
+                <tr class="table-active">
+                  <td>Name Of The Skill</td>
+                  <td>
+                    <div class="checkbox">
+                    <label><input type="checkbox" value=""></label>
+                  </div>
+                </td>
+                <td>
+                  <div class="checkbox">
+                  <label><input type="checkbox" value=""></label>
+                </div>
+              </td>
+                </tr>  
+                </tr>
+                <tr class="table-secondary">
+                  <td>Name Of The Skill</td>
+                  <td>
+                    <div class="checkbox">
+                    <label><input type="checkbox" value=""></label>
+                  </div>
+                </td>
+                <td>
+                  <div class="checkbox">
+                  <label><input type="checkbox" value=""></label>
+                </div>
+              </td>
+                </tr>  
+                </tr>
+                <tr class="table-light">
+                  <td>Name Of The Skill</td>
+                  <td>
+                    <div class="checkbox">
+                    <label><input type="checkbox" value=""></label>
+                  </div>
+                </td>
+                <td>
+                  <div class="checkbox">
+                  <label><input type="checkbox" value=""></label>
+                </div>
+              </td>
+                </tr>  
+                </tr>
+                <tr class="table-dark text-dark">
+                  <td>Name Of The Skill</td>
+                  <td>
+                    <div class="checkbox">
+                    <label><input type="checkbox" value=""></label>
+                  </div>
+                </td>
+                <td>
+                  <div class="checkbox">
+                  <label><input type="checkbox" value=""></label>
+                </div>
+              </td>
+                </tr>  
+                </tr>
+              </tbody>
+            </table>
+    
+    
+    
+    
+
+
+          </div>
+          
+        </div>
+
+        <hr/><br/>
+
+
+
+        <label>
+          <input type="checkbox" checked="checked" name="student"> Register as a Student
+        </label>
+        <label>
+          <input type="checkbox" checked="checked" name="tuter"> Register as a Tuter
+        </label>
+        <input type="submit" value="Continue to checkout" class="btn">
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
